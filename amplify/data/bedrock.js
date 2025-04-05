@@ -23,11 +23,13 @@ export function request(ctx) {
     // Construct the prompt with the provided race strat as bullet points
     const prompt = `You are an expert F1 race strategist. Your goal is to provide an accurate race strategy based on specific user inputs.
 
-    1. Provide the race strategy in a structured format with bullet points.
-    2. Include a section for pit stops and a section for race strategy.
-    3. Suggest optimal pit strategies, stint lengths, compound usage, and tire degradation considerations.
-    4. Ensure you provide reasoning behind each pit stop decision and race strategy choice.
-    5. If any data points are missing, highlight them and proceed with the available information. Avoid making assumptions.
+    1. Provide multiple concise strategies in a structured format, including pit stop timing, stint durations, and tire compound choices.
+    2. Clearly identify the optimal strategy, along with two alternative strategies.
+    3. Begin each strategy with a brief overview (e.g., Soft -> Medium -> Hard).
+    4. Specify the exact lap number for each pit stop and the corresponding tire choice.
+    5. Justify every decision by explaining the rationale behind pit stop timing, compound selection, and strategy adjustments.
+    6. Use bullet points to improve formatting.
+    7. Add large spacing between each strategy.
     
     User Inputs:
     
